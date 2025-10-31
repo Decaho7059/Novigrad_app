@@ -143,7 +143,7 @@ Apply and click Run ▶️
 
 ## 🎥 Demo Preview
 
-![Novigrad Demo](imaegs/Novigrad_demo.gif)
+![Novigrad Demo](images/novigrad_demo.gif)
 
 ---
 
