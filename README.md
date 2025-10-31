@@ -4,17 +4,18 @@
 ---
 
 ## 🎯 Project Overview
-
+```bash
 **Novigrad** is a simulated municipal service management system built entirely in **Java**, where different user roles — *employees*, *managers*, and *clients* — interact with city-style services such as driver’s license renewals, form submissions, and document verification.
 
-The purpose of this project was to apply the **core principles of software engineering** taught in the SEG2505 course, including:
+The goal of this project was to apply the **core principles of software engineering** covered in **SEG2505**, including:
 
 - Object-Oriented Programming (OOP)
-- Model–View–Controller (MVC) software design
+- Model–View–Controller (MVC) architecture
 - UML modeling and documentation
 - Input validation and exception handling
 - Unit testing and version control
-
+- Collaborative software development practices
+```
 ---
 
 ## ⚙️ Technologies and Tools
@@ -23,68 +24,87 @@ The purpose of this project was to apply the **core principles of software engin
 |----------------------|------------|
 | ☕ **Java (JDK 17+)** | Main programming language |
 | 🎨 **JavaFX** | Graphical user interface (GUI) |
-| 🧠 **MVC Architecture** | Separation of logic, view, and control layers |
+| 🧠 **MVC Architecture** | Separation of model, view, and controller layers |
 | 🧪 **JUnit** | Unit testing and quality assurance |
-| 🗂️ **Git & GitHub** | Version control and team collaboration |
-| 🧱 **UML Diagrams** | Object-oriented system modeling |
-| 📄 **JavaDoc** | Code documentation |
+| 🗂️ **Git & GitHub** | Version control and collaboration |
+| 🧱 **UML Diagrams** | System design and modeling |
+| 📄 **JavaDoc** | Code documentation and maintainability |
 
 ---
 
 ## 🚀 Key Features
-
-- 👤 **User Management** – Sign up, log in, and manage user roles (Client, Employee, Manager)
-- 🏢 **Service Management** – Create, modify, and delete municipal services
-- 📁 **Document Handling** – Upload, review, and validate client documents
-- 💾 **Persistent Storage** – File-based data management system
-- 🕹️ **Interactive GUI** – Intuitive and accessible interface built with JavaFX
-- 🔍 **Input Validation** – Error handling and user feedback for data consistency
-
----
-
-## 👥 Roles and Responsibilities
-
-- **Decaho Gbegbe:** Software developer – design, implementation, and testing  
-- **Course Instructors & TAs:** Provided specifications, feedback, and evaluation  
-- **Team Collaboration:** Used Git branching, commits, and merges for version control
-
+```bash
+- 👤 **User Management** – Register, log in, and manage roles (Client, Employee, Manager)  
+- 🏢 **Service Management** – Create, modify, and delete municipal services  
+- 📁 **Document Handling** – Upload, review, and validate client documents  
+- 💾 **Persistent Storage** – File-based system for data persistence  
+- 🕹️ **Interactive GUI** – Intuitive JavaFX-based user interface  
+- ⚠️ **Input Validation** – Error handling and user feedback mechanisms  
+- 📊 **Reporting (optional)** – View and manage service statistics  
+```
 ---
 
 ## 🧠 Learning Outcomes
+```bash
+This project reinforced hands-on understanding of:
 
-This project reinforced practical understanding of:
-
-- **Encapsulation, Inheritance, and Polymorphism**
-- **Abstraction and Interfaces**
-- **Exception handling and error management**
-- **Collections API (ArrayList, HashMap, etc.)**
-- **File I/O operations** for saving and loading data
-- **Test-Driven Development (TDD)** with JUnit
-- **Collaborative development** using Git and GitHub
-
+- **Encapsulation, Inheritance, and Polymorphism**  
+- **Interfaces and Abstract Classes**  
+- **Exception Handling and Validation**  
+- **Collections Framework (ArrayList, HashMap, etc.)**  
+- **File I/O Operations** for saving and loading data  
+- **Test-Driven Development (TDD)** using JUnit  
+- **Git Collaboration Workflow** (branches, commits, merges, pull requests)
+```
 ---
 
-## 📚 Academic Context
+## 👥 Roles and Responsibilities
+```bash
+- **Decaho Gbegbe:**  
+  Developer – Design, implementation, testing, and documentation.  
 
-> **Course:** SEG2505 – Introduction to Software Development  
-> **Institution:** University of Ottawa  
-> **Session:** Fall 2024  
-> **Language:** Java  
-> **Project Type:** Academic – Educational purpose only  
+- **Course Instructors & TAs:**  
+  Provided functional requirements, feedback, and evaluation.  
 
-The Novigrad project served as a hands-on introduction to real-world software development and teamwork practices through an incremental design and iterative coding approach.
-
+- **Team Collaboration:**  
+  Used Git and GitHub for version control and iterative code review.
+```
 ---
 
-## ⚖️ License & Acknowledgments
 
-© 2024 **Decaho Gbegbe** – University of Ottawa  
-This project was created for academic purposes only as part of a university course.  
-Commercial use or redistribution without permission is strictly prohibited.  
+## 🧩 Project Structure
 
-Some assets and icons may be sourced from open-license repositories or educational templates.  
-All rights belong to their respective owners.
-
----
-
-💡 *“Novigrad isn’t just a city — it’s a training ground for future software engineers.”*
+```bash
+Novigrad/
+│
+├── src/
+│   ├── Main.java                      # Entry point
+│   ├── controller/
+│   │   ├── LoginController.java
+│   │   ├── ServiceController.java
+│   │   └── UserController.java
+│   │
+│   ├── model/
+│   │   ├── User.java
+│   │   ├── Client.java
+│   │   ├── Employee.java
+│   │   ├── Manager.java
+│   │   ├── Service.java
+│   │   └── Document.java
+│   │
+│   └── view/
+│       ├── LoginView.java
+│       ├── MainView.java
+│       └── ServiceView.java
+│
+├── resources/
+│   ├── data/                          # Files storing users and services
+│   └── ui/                            # FXML files or visual assets
+│
+├── test/
+│   ├── UserTest.java
+│   ├── ServiceTest.java
+│   └── FileManagerTest.java
+│
+└── README.md
+```
