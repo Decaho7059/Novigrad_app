@@ -1,0 +1,72 @@
+package com.bashizip.ProjectServiceNovagard;
+
+import android.content.Intent;
+import android.os.Bundle;
+import android.widget.Button;
+import android.widget.Toast;
+
+import androidx.appcompat.app.AppCompatActivity;
+
+import com.bashizip.bhlib.BusinessHours;
+import com.bashizip.bhlib.BusinessHoursWeekPicker;
+import com.bashizip.bhlib.ValdationException;
+
+import java.io.Serializable;
+import java.util.List;
+import java.util.concurrent.atomic.AtomicReference;
+
+public class BranchHoursMainActivity extends AppCompatActivity {
+
+    public static final String BH_LIST = "bh_list";
+
+
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_branch_hours_main);
+        BusinessHoursWeekPicker bh_picker = findViewById(R.id.bh_picker);
+        Button btn_apply = findViewById(R.id.btn_apply);
+        Button btn_view = findViewById(R.id.btn_view);
+        Button btn_Main = findViewById(R.id.buttonMain);
+
+        List<BusinessHours> savedList = (List<BusinessHours>) getIntent().getSerializableExtra(BH_LIST);
+        if (savedList != null) {
+            bh_picker.setBusinessHoursList(savedList);
+        }
+
+        btn_apply.setOnClickListener(view -> {
+            List<BusinessHours> bhs = null;
+            try {
+                bhs = bh_picker.getBusinessHoursList();
+
+            } catch (ValdationException e) {
+                Toast.makeText(this, e.getMessage(), Toast.LENGTH_LONG).show();
+                return;
+            }
+            Intent intent = new Intent(this, BranchHoursMainActivity.class);
+            intent.putExtra(BH_LIST, (Serializable) bhs);
+            startActivity(intent);
+
+        });
+
+        btn_Main.setOnClickListener(view -> {
+            Intent intent = new Intent(this, BranchWelcomePage.class);
+            startActivity(intent);
+        });
+
+
+        btn_view.setOnClickListener(view -> {
+            List<BusinessHours> bhs = null;
+            try {
+                bhs = bh_picker.getBusinessHoursList();
+
+            } catch (ValdationException e) {
+                Toast.makeText(this, e.getMessage(), Toast.LENGTH_LONG).show();
+                return;
+            }
+            Intent intent = new Intent(this, ViewerActivity.class);
+            intent.putExtra(BH_LIST, (Serializable) bhs);
+            startActivity(intent);
+        });
+    }
+}

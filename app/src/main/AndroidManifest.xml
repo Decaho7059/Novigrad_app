@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.bashizip.ProjectServiceNovagard">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        tools:ignore="GoogleAppIndexingWarning"
+        android:fullBackupContent="@xml/backup_descriptor">
+        <activity android:name=".SinglePickerActivity">
+        </activity>
+        <activity android:name=".MainActivity"
+            android:exported="true">
+            android:theme="@style/Theme.AppCompat.NoActionBar"
+            android:windowSoftInputMode="stateHidden|adjustPan"
+            android:configChanges="orientation|screenSize"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".BranchHoursMainActivity"
+            android:theme="@style/Theme.AppCompat.NoActionBar"
+            android:windowSoftInputMode="stateHidden|adjustPan"
+            android:configChanges="orientation|screenSize"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".Register"
+            android:theme="@style/Theme.AppCompat.NoActionBar"
+            android:windowSoftInputMode="stateHidden|adjustPan"
+            android:configChanges="orientation|screenSize"
+            >
+        </activity>
+        <activity android:name=".ShowAdminPage"
+            android:theme="@style/Theme.AppCompat.NoActionBar"
+            android:windowSoftInputMode="stateHidden|adjustPan"
+            android:configChanges="orientation|screenSize"
+            >
+        </activity>
+        <activity android:name=".ServiceDetailActivity"
+            android:theme="@style/Theme.AppCompat.NoActionBar"
+            android:windowSoftInputMode="stateHidden|adjustPan"
+            android:configChanges="orientation|screenSize"
+            >
+        </activity>
+        <activity android:name=".MainServiceActivity"
+            android:parentActivityName=".MainActivity"
+            android:theme="@style/Theme.AppCompat.NoActionBar"
+            android:windowSoftInputMode="stateHidden|adjustPan"
+            android:configChanges="orientation|screenSize"
+            >
+        </activity>
+        <activity android:name=".Services"
+            android:theme="@style/Theme.AppCompat.NoActionBar"
+            android:windowSoftInputMode="stateHidden|adjustPan"
+            android:configChanges="orientation|screenSize"
+            tools:ignore="Instantiatable">
+        </activity>
+        <activity android:name=".ViewEmployeeActivity"
+            android:theme="@style/Theme.AppCompat.NoActionBar"
+            android:windowSoftInputMode="stateHidden|adjustPan"
+            android:configChanges="orientation|screenSize"
+            tools:ignore="Instantiatable">
+        </activity>
+
+        <activity android:name=".EmployeeAdapterClass"
+            android:theme="@style/Theme.AppCompat.NoActionBar"
+            android:windowSoftInputMode="stateHidden|adjustPan"
+            android:configChanges="orientation|screenSize"
+            tools:ignore="Instantiatable">
+        </activity>
+        <activity android:name=".BranchAdapterClass"
+            android:theme="@style/Theme.AppCompat.NoActionBar"
+            android:windowSoftInputMode="stateHidden|adjustPan"
+            android:configChanges="orientation|screenSize"
+            tools:ignore="Instantiatable">
+        </activity>
+        <activity android:name=".BranchWelcomePage"
+            android:theme="@style/Theme.AppCompat.NoActionBar"
+            android:windowSoftInputMode="stateHidden|adjustPan"
+            android:configChanges="orientation|screenSize"
+            tools:ignore="Instantiatable">
+        </activity>
+        <activity android:name=".BranchInformation"
+            android:theme="@style/Theme.AppCompat.NoActionBar"
+            android:windowSoftInputMode="stateHidden|adjustPan"
+            android:configChanges="orientation|screenSize"
+            tools:ignore="Instantiatable">
+        </activity>
+        <activity android:name=".ViewBranchActivity"
+            android:theme="@style/Theme.AppCompat.NoActionBar"
+            android:windowSoftInputMode="stateHidden|adjustPan"
+            android:configChanges="orientation|screenSize"
+            tools:ignore="Instantiatable">
+        </activity>
+        <activity android:name=".RegisterBranch"
+            android:theme="@style/Theme.AppCompat.NoActionBar"
+            android:windowSoftInputMode="stateHidden|adjustPan"
+            android:configChanges="orientation|screenSize"
+            tools:ignore="Instantiatable">
+        </activity>
+        <activity android:name=".ShowClientPage"
+            android:theme="@style/Theme.AppCompat.NoActionBar"
+            android:windowSoftInputMode="stateHidden|adjustPan"
+            android:configChanges="orientation|screenSize"
+            tools:ignore="Instantiatable">
+        </activity>
+        <activity android:name=".BranchDatabase"
+            android:theme="@style/Theme.AppCompat.NoActionBar"
+            android:windowSoftInputMode="stateHidden|adjustPan"
+            android:configChanges="orientation|screenSize"
+            tools:ignore="Instantiatable">
+        </activity>
+        <activity android:name=".ViewerActivity" />
+    </application>
+
+</manifest>
