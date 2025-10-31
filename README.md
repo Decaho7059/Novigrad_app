@@ -155,9 +155,9 @@ Session: Fall 2024
 Language: Java
 Project Type: Academic – Educational Purpose
 
-```bash
+
 The Novigrad project was designed as a practical introduction to software development and teamwork, reinforcing theoretical concepts through the creation of a functional municipal service management system.
-```
+
 ---
 
 ## ⚖️ License & Acknowledgments
