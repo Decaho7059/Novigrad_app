@@ -108,4 +108,67 @@ Novigrad/
 │
 └── README.md
 ```
+---
+## ⚙️ How to Run the Project
+🖥️ Requirements
+```bash
+Java JDK 17+
 
+JavaFX SDK (if not bundled with your IDE)
+
+IDE such as VS Code or IntelliJ IDEA
+```
+
+## ▶️ Run in VS Code or Terminal
+``` bash
+1️⃣ Compile all .java files:
+
+javac -cp src --module-path "PATH_TO_JAVAFX/lib" --add-modules javafx.controls,javafx.fxml src/**/*.java
+```
+
+##2️⃣ Run the main program:
+```bash
+java -cp src --module-path "PATH_TO_JAVAFX/lib" --add-modules javafx.controls,javafx.fxml Main
+```
+
+## 💡 In IntelliJ IDEA:
+```bash
+Go to Run → Edit Configurations → Add JavaFX Application
+
+Set main class: Main
+
+Apply and click Run ▶️
+```
+---
+
+## 🎥 Demo Preview
+
+![Novigrad Demo](imaegs/Novigrad_demo.gif)
+
+---
+
+## 📚 Academic Context
+
+Course: SEG2505 – Introduction to Software Development
+Institution: University of Ottawa
+Session: Fall 2024
+Language: Java
+Project Type: Academic – Educational Purpose
+
+```bash
+The Novigrad project was designed as a practical introduction to software development and teamwork, reinforcing theoretical concepts through the creation of a functional municipal service management system.
+```
+---
+
+## ⚖️ License & Acknowledgments
+```bash
+© 2024 Decaho Gbegbe – University of Ottawa
+This project was created for educational purposes only as part of a university course.
+Commercial use, redistribution, or modification without written permission is prohibited.
+
+Some assets, icons, or templates may be used under open-source or fair use licenses.
+All trademarks and names belong to their respective owners.
+```
+---
+
+💡 “Novigrad isn’t just a city — it’s a training ground for future software engineers.”
