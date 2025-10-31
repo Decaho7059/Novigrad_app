@@ -4,7 +4,7 @@
 ---
 
 ## 🎯 Project Overview
-```bash
+
 **Novigrad** is a simulated municipal service management system built entirely in **Java**, where different user roles — *employees*, *managers*, and *clients* — interact with city-style services such as driver’s license renewals, form submissions, and document verification.
 
 The goal of this project was to apply the **core principles of software engineering** covered in **SEG2505**, including:
@@ -15,7 +15,7 @@ The goal of this project was to apply the **core principles of software engineer
 - Input validation and exception handling
 - Unit testing and version control
 - Collaborative software development practices
-```
+
 ---
 
 ## ⚙️ Technologies and Tools
@@ -33,7 +33,7 @@ The goal of this project was to apply the **core principles of software engineer
 ---
 
 ## 🚀 Key Features
-```bash
+
 - 👤 **User Management** – Register, log in, and manage roles (Client, Employee, Manager)  
 - 🏢 **Service Management** – Create, modify, and delete municipal services  
 - 📁 **Document Handling** – Upload, review, and validate client documents  
@@ -41,11 +41,11 @@ The goal of this project was to apply the **core principles of software engineer
 - 🕹️ **Interactive GUI** – Intuitive JavaFX-based user interface  
 - ⚠️ **Input Validation** – Error handling and user feedback mechanisms  
 - 📊 **Reporting (optional)** – View and manage service statistics  
-```
+
 ---
 
 ## 🧠 Learning Outcomes
-```bash
+
 This project reinforced hands-on understanding of:
 
 - **Encapsulation, Inheritance, and Polymorphism**  
@@ -55,11 +55,11 @@ This project reinforced hands-on understanding of:
 - **File I/O Operations** for saving and loading data  
 - **Test-Driven Development (TDD)** using JUnit  
 - **Git Collaboration Workflow** (branches, commits, merges, pull requests)
-```
+
 ---
 
 ## 👥 Roles and Responsibilities
-```bash
+
 - **Decaho Gbegbe:**  
   Developer – Design, implementation, testing, and documentation.  
 
@@ -68,7 +68,7 @@ This project reinforced hands-on understanding of:
 
 - **Team Collaboration:**  
   Used Git and GitHub for version control and iterative code review.
-```
+
 ---
 
 
@@ -108,3 +108,4 @@ Novigrad/
 │
 └── README.md
 ```
+
