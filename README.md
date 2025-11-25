@@ -16,6 +16,10 @@ The goal of this project was to apply the **core principles of software engineer
 - Unit testing and version control
 - Collaborative software development practices
 
+## 🎥 Demo Preview
+
+![Novigrad Demo](images/novigrad_demo.gif)
+
 ---
 
 ## ⚙️ Technologies and Tools
@@ -141,11 +145,6 @@ Apply and click Run ▶️
 ```
 ---
 
-## 🎥 Demo Preview
-
-![Novigrad Demo](images/novigrad_demo.gif)
-
----
 
 ## 📚 Academic Context
 
